@@ -1,4 +1,5 @@
 #pragma once
+using namespace std;
 void showMenu() {
 	cout << "Choice a search operation: \n" << endl;
 	cout << "1 - Search by brand\t\t\t||\t 6 - Add car\t\t\t||\t11 - Show all contracts" << endl;
@@ -75,6 +76,8 @@ void showAllContracts(const Contract* contracts, int length) {
 }
 
 void welcomeScreen() {
+	system("cls");
+
 	HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleTextAttribute(handle, FOREGROUND_RED);
 
@@ -88,6 +91,4 @@ void welcomeScreen() {
 
 	SetConsoleTextAttribute(handle, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
 	SetConsoleTextAttribute(handle, FOREGROUND_RED);
-	cout << "Press any key to enter the main menu..." << endl;
-	_getch();
 }

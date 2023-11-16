@@ -1,4 +1,6 @@
 #pragma once
+using namespace std;
+
 
 void animateLoading() {
 	for (int i = 0; i < 1; ++i) {

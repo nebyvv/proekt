@@ -82,6 +82,7 @@ int main() {
 		switch (choice)
 		{
 		case 1: {
+			system("cls");
 			char marka[30];
 			cout << "Enter the brand search: ";
 			cin >> marka;
@@ -90,6 +91,8 @@ int main() {
 			break;
 		}
 		case 2: {
+			system("cls");
+
 			char color[30];
 			cout << "Enter the color search: ";
 			cin >> color;
@@ -99,6 +102,8 @@ int main() {
 			break;
 		}
 		case 3: {
+			system("cls");
+
 			char regis_number[30];
 			cout << "Enter the registration number search: ";
 			cin >> regis_number;
@@ -108,6 +113,8 @@ int main() {
 			break;
 		}
 		case 4: {
+			system("cls");
+
 			int year;
 			cout << "Enter the year of issue search: ";
 			cin >> year;
@@ -117,6 +124,8 @@ int main() {
 			break;
 		}
 		case 5: {
+			system("cls");
+
 			char client_name[20];
 			char client_surname[20];
 			cout << "Enter the client name: ";
@@ -129,13 +138,18 @@ int main() {
 
 			break;
 		}
+
 		case 6: {
+			system("cls");
+
 			menu = addCar(menu, length);
 			system("pause");
 			break;
 			
 		}
 		case 7: {
+			system("cls");
+
 			menu_clients = addClient(menu_clients, length_client);
 			system("pause");
 
@@ -143,6 +157,8 @@ int main() {
 			
 		}
 		case 8: {
+			system("cls");
+
 			char clientName[20];
 			char clientSurname[20];
 			char regNumber[30];
@@ -166,7 +182,7 @@ int main() {
 			break;
 		}
 		case 9: {
-			
+			system("cls");
 
 			animateLoading();
 			showCar(menu, length);
@@ -178,6 +194,8 @@ int main() {
 			break;
 		}
 		case 10: {
+			system("cls");
+
 			
 			animateLoading();
 			showClient(menu_clients, length_client);
@@ -189,6 +207,8 @@ int main() {
 			break;
 		}
 		case 11: {
+			system("cls");
+
 		
 			animateLoading();
 			showAllContracts(contracts, length_cont);
@@ -200,6 +220,8 @@ int main() {
 			break;
 		}
 		case 12: {
+			system("cls");
+
 			char registartion_mark[30];
 			cout << "Enter the car registratrion num remove: ";
 			cin >> registartion_mark;
@@ -208,6 +230,8 @@ int main() {
 			break;
 		}
 		case 13: {
+			system("cls");
+
 			char name[20];
 			char surname[20];
 			cout << "Enter the name remove: ";
@@ -221,6 +245,8 @@ int main() {
 			
 		}
 		case 14: {
+			system("cls");
+
 			char clientName[20];
 			char clientSurname[20];
 
@@ -252,14 +278,16 @@ int main() {
 			system("pause");
 			break;
 		}
-		case 15: 
+		case 15: {
 			cout << "Exiting the program." << endl;
 			delete[] menu;
 			delete[] menu_clients;
 			delete[] contracts;
 			return 0;
+		}
 		default:
 			cout << "There is no such option!" << endl;
+			break;
 		}
 
 	}

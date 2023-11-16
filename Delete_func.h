@@ -1,4 +1,7 @@
 #pragma once
+using namespace std;
+#include "compare.h"
+
 Car* removeCar(Car* cars, int& length, const char* registration_mark) {
 	system("cls");
 

@@ -1,4 +1,6 @@
 #pragma once
+using namespace std;
+
 int compareString(const char* chr1, const char* chr2) {
 	while (*chr1 != '\0' && *chr2 != '\0')
 	{

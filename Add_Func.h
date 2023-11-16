@@ -1,4 +1,6 @@
 #pragma once
+using namespace std;
+#include "compare.h"
 Car* addCar(Car* car, int& length) {
 	system("cls");
 

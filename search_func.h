@@ -1,4 +1,7 @@
 #pragma once
+using namespace std;
+#include "compare.h"
+#include "ShowFunc.h"
 void searchMarka(const Car* cars, int length, const char* marka) {
 	system("cls");
 
